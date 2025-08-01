@@ -1,0 +1,77 @@
+main {
+  background-color: rgb(81, 85, 94);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 25%;
+  height: 65%;
+}
+
+.screen {
+  background-color: rgba(255, 255, 255, 0.788);
+  text-align: right;
+  padding: 4%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  width: 92%;
+  border-radius: 10px;
+  font-size: 3rem;
+  font-family: var(--buttons-font);
+  box-shadow: 3px 3px 3px rgba(255, 255, 101, 0.349);
+}
+.calc-buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 2px;
+}
+
+.calc-button:last-child {
+  background-color: rgb(15, 236, 225);
+  color: white;
+}
+
+.buttons-row {
+  gap: 8px;
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.buttons-row:last-child {
+  margin-bottom: 0;
+}
+
+.calc-button,
+.calc-button-double,
+.calc-button-triple {
+  padding: 20px;
+  font-size: 1.5rem;
+  background-color: whitesmoke;
+  border: 1px solid #444;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 30px;
+  font-family: var(--buttons-font);
+}
+.calc-button:last-child,
+.calc-button-double:last-child,
+.calc-button-triple:last-child {
+  margin-right: 0;
+}
+
+.calc-button {
+  flex: 1;
+}
+
+.calc-button-double {
+  flex: 2;
+  flex-basis: 21%;
+}
+
+.calc-button-triple {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 33%;
+}

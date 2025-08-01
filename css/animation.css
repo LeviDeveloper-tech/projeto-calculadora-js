@@ -1,0 +1,20 @@
+.calc-button,
+.calc-button-double,
+.calc-button-triple {
+  transition: 0.3s;
+}
+
+.calc-button:hover,
+.calc-button-double:hover,
+.calc-button-triple:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.calc-button:active,
+.calc-button-double:active,
+.calc-button-triple:active {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
