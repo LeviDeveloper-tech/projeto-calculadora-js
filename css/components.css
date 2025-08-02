@@ -2,8 +2,10 @@ main {
   background-color: rgb(81, 85, 94);
   border-radius: 15px;
   overflow: hidden;
-  width: 25%;
-  height: 65%;
+  width: 25vw;
+  height: 40vw;
+  min-height: 32em;
+  min-width: 20em;
 }
 
 .screen {
@@ -23,7 +25,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  gap: 2px;
+  gap: 8px;
 }
 
 .calc-button:last-child {
@@ -32,9 +34,10 @@ main {
 }
 
 .buttons-row {
-  gap: 8px;
   display: flex;
   margin-bottom: 2px;
+  gap: 9px;
+  justify-content: space-between;
 }
 
 .buttons-row:last-child {
@@ -44,7 +47,9 @@ main {
 .calc-button,
 .calc-button-double,
 .calc-button-triple {
-  padding: 20px;
+  flex: 1;
+  min-width: 0;
+  padding: 15px 0;
   font-size: 1.5rem;
   background-color: whitesmoke;
   border: 1px solid #444;
@@ -65,7 +70,7 @@ main {
 
 .calc-button-double {
   flex: 2;
-  flex-basis: 21%;
+  flex-basis: 5%;
 }
 
 .calc-button-triple {
@@ -73,5 +78,5 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 33%;
+  flex-basis: 8%;
 }
