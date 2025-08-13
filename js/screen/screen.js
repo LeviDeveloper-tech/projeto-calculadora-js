@@ -5,4 +5,9 @@ export function initialScreen() {
   calcScreen.textContent = state.currentValue;
 }
 
-function updateScreen() {}
+export function updateScreen() {
+  const calcScreen = document.querySelector(".screen");
+  if (state.currentValue != 0) {
+    calcScreen.textContent = state.currentValue;
+  }
+}
