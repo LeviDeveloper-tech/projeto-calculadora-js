@@ -1,5 +1,5 @@
-import { updateScreen } from "../screen/screen.js";
-import { state } from "../state/state.js";
+import { updateScreen } from "../../screen/screen.js";
+import { state } from "../../state/state.js";
 
 export function clickNumber() {
   const btNum = document.querySelectorAll(".btn-num");
