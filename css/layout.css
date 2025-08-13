@@ -19,3 +19,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+main {
+  background-color: rgb(81, 85, 94);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 25vw;
+  height: 40vw;
+  min-height: 32em;
+  min-width: 20em;
+}
