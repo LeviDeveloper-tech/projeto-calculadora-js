@@ -1,11 +1,15 @@
 import { clickNumber } from "./actions/numbersClick/numbers.js";
-import { allOperatorClick } from "./actions/operatorsClick/operator.js";
+import {
+  allOperatorClick,
+  calculate,
+} from "./actions/operatorsClick/operator.js";
 import { initialScreen } from "./screen/screen.js";
-
-clickNumber();
-allOperatorClick();
+import { clearAll } from "./utils/utils.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initialScreen();
+  clickNumber();
+  allOperatorClick();
+  calculate();
+  clearAll();
 });
-const numTeste = document.querySelector(".testeNumber");

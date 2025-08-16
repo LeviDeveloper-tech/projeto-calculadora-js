@@ -7,10 +7,10 @@ export function clickNumber() {
   btNum.forEach((element) => {
     element.addEventListener("click", () => {
       if (state.shouldResetScreen || state.currentValue == 0) {
-        state.currentValue = element.textContent;
+        state.currentValue = element.textContent.trim();
         state.shouldResetScreen = false;
       } else {
-        state.currentValue += element.textContent;
+        state.currentValue += element.textContent.trim();
       }
 
       updateScreen();
