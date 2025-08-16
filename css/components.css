@@ -1,15 +1,19 @@
 .screen {
   background-color: rgba(255, 255, 255, 0.788);
-  text-align: right;
-  padding: 4%;
+  padding: 2%;
   margin: auto;
   margin-top: 5%;
   margin-bottom: 7%;
   width: 92%;
+  min-height: 5rem;
   border-radius: 10px;
-  font-size: 3rem;
+  font-size: 6vh;
   font-family: var(--buttons-font);
+  overflow: hidden;
   box-shadow: 3px 3px 3px rgba(255, 255, 101, 0.349);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .calc-buttons {
   display: flex;

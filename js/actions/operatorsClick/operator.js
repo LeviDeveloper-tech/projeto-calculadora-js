@@ -11,10 +11,12 @@ export function allOperatorClick() {
   btnOperator.forEach((element) => {
     element.addEventListener("click", () => {
       if (state.shouldResetScreen == false) {
+        updateScreen();
         state.previousValue = state.currentValue;
         state.currentOperator = element.textContent.trim();
         state.shouldResetScreen = true;
       } else {
+        updateScreen();
         state.currentOperator = element.textContent.trim();
         state.shouldResetScreen = true;
       }

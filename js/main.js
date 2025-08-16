@@ -4,12 +4,13 @@ import {
   calculate,
 } from "./actions/operatorsClick/operator.js";
 import { initialScreen } from "./screen/screen.js";
-import { clearAll } from "./utils/utils.js";
+import { clearAll, deleteLastNumber } from "./utils/utils.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initialScreen();
   clickNumber();
   allOperatorClick();
   calculate();
+  deleteLastNumber();
   clearAll();
 });

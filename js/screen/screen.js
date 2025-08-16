@@ -7,5 +7,8 @@ export function initialScreen() {
 
 export function updateScreen() {
   const calcScreen = document.querySelector(".screen");
-  calcScreen.textContent = state.currentValue;
+  calcScreen.textContent = "";
+  setTimeout(() => {
+    calcScreen.textContent = state.currentValue;
+  }, 100);
 }
